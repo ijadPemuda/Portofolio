@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Caviar;
+    src: url(CaviarDreams.ttf);
+}
+
+* {
+    font-family: Caviar;
+    color: rgb(87, 87, 87);
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 10vw;
+}
+
+.content1 {
+    margin: 2vw 5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    align-items: center;
+}
+
+.content1 img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.content1 .text #title {
+    text-align: center;
+    margin-bottom: 8vw;
+}
+
+nav {
+    display: flex;
+    margin: 5dvh;
+    font-size: 15pt;
+    justify-content: flex-end;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav #nav2 {
+    color: rgb(101, 101, 255);
+}
+
+nav a:hover {
+    color: rgb(147, 124, 80);
+}
+
+@media (max-width: 750px) {
+    .content1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
